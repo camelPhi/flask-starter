@@ -109,7 +109,7 @@ img {
     padding-top: 56.25%;
 }
 
-iframe {
+.mainMap {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,6 +125,10 @@ iframe {
     .map {
         padding-top: 75%;
     }
+}
+
+.fill {
+    height: 100%;
 }
 
 .fill-form {
@@ -144,12 +148,14 @@ form {
 }
 
 .responseEmail {
-    display: flex;
     text-align: center;
     width: 50%;
-    margin: 20px auto;
-    text-color: #FFFFFF;
-    padding: auto;
+    margin: 0 auto;
+    text-color: #DD2026;
+}
+
+hr {
+    border: 1px solid black;
 }
 
 .fields, form textarea {
@@ -158,11 +164,20 @@ form {
     outline: none;
     font-weight: "bold";
     border-bottom: 2px solid white;
+    border-style: solid;
     margin: 10px 0;
     padding: 20px;
     outline: none;
     font-size: 16px;
     border-radius: 10px;
+}
+
+.fields:focus {
+    border-bottom: 2px solid rgb(150,10,10);
+}
+
+form textarea:focus {
+    border-bottom: 2px solid rgb(150,10,10);
 }
 
 input::placeholder {
@@ -218,12 +233,20 @@ textarea::placeholder {
 
 .container{
     display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
     flex-direction: column;
 }
 
 .doc-item {
     flex-grow: 1;
     padding: 0.8rem;
+}
+
+.calendar {
+    width: 95%;
+    background-color: white;
 }
 
 .calendar iframe {
@@ -271,8 +294,15 @@ a {
 }
 
 .links {
+    width: 65%;
+    margin: 0 auto;
+    padding: 1% 17.5%;
     background-color: white;
     color: black;
+}
+
+.linksHeader {
+    text-align: left;
 }
 
 .links-item {

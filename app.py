@@ -2,7 +2,7 @@ import os
 import re
 import logging
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
 app = Flask(__name__)
 
@@ -24,7 +24,7 @@ MESSAGE = ""
 
 @app.route("/")
 def index():
-    return render_template("index.html", message=MESSAGE)
+    return render_template("index.html",message=MESSAGE)
 
 @app.route("/documents")
 def documents():
@@ -58,4 +58,4 @@ def send_email():
     MESSAGE = "Thanks! Message sent."
 
     # Redirects to index.html
-    return redirect("/", code=302)
+    return redirect(url_for("index", _anchor="sent"))
