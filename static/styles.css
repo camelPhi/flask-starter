@@ -51,7 +51,7 @@ h4 {
     justify-content: space-around;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .navbar {
         display: none;
     }
@@ -97,7 +97,7 @@ h4 {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .mobile-menu {
         display: block;
     }
@@ -119,6 +119,13 @@ img {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, minmax(240px, 1fr));
+}
+
+@media (max-width: 800px) {
+    .main-trio {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .main-about {
@@ -153,11 +160,25 @@ img {
     height: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .contact-us {
         display: flex;
         flex-direction: column;
     }
+
+    .contact-forms {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-forms-item {
+        width: 100%;
+    }
+
+    .fields, textarea {
+        width: 100%;
+    }
+
     .map {
         padding-top: 75%;
     }
