@@ -18,10 +18,6 @@ mail = Mail(app)
 
 MESSAGE = ""
 
-# @app.route('/')
-# def hello_world():
-#     return 'Hello, World!'
-
 @app.route("/")
 def index():
     return render_template("index.html",message=MESSAGE)
