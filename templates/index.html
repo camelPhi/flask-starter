@@ -4,6 +4,7 @@
     <title>Another Home | Glen Rock Troop 15</title>
     <link rel="icon" type="image/png" href="static/troopLogo.png"/>
     <link rel="stylesheet" href="static/styles.css">
+	<script src="static/hamburger.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -11,19 +12,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<div class="container-item header">
 			<div class="logo"><a href="/"><img src="static/troopLogo.png"></a></div>
-			<input id="menu-toggle" type="checkbox" />
-    		<label class='menu-button-container' for="menu-toggle">
-    			<div class='menu-button'></div>
-  			</label>
     		<div class="navbar">
-				<ul class="menu">
+				<a class="nav-item" href="/">Home</a>
+				<a class="nav-item" href="/calendar">What's happening?</a>
+				<a class="nav-item" href="/documents">Documents</a>
+				<a class="nav-item" href="/links">Useful Links</a>
+				<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
+    		</div>
+			<nav class="mobile-menu">
+				<div class="hamburger-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="menu-items">
 					<li><a class="nav-item" href="/">Home</a></li>
 					<li><a class="nav-item" href="/calendar">What's happening?</a></li>
 					<li><a class="nav-item" href="/documents">Documents</a></li>
 					<li><a class="nav-item" href="/links">Useful Links</a></li>
 					<li><a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a></li>
 				</ul>
-    		</div>
+			</nav>
         </div>
 		<div class="container-item header-image">
 	    	<img src="static/homeImage1.png">
