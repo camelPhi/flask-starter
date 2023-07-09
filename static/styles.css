@@ -4,7 +4,7 @@ html {
     font-family: "Poppins Extra Light", Sans-Serif;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
     html {
         font-family: Arial, Sans-Serif;
         font-size: 3vw;
@@ -43,6 +43,15 @@ h4 {
     border-radius: 10px;
 }
 
+@media (max-width: 1080px) {
+    .header .logo img {
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -51,7 +60,7 @@ h4 {
     justify-content: space-between;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
     .header {
         flex-direction: column;
     }
@@ -64,7 +73,7 @@ h4 {
     justify-content: space-around;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
     .navbar {
         display: none;
     }
@@ -129,7 +138,7 @@ h4 {
     background-color: rgb(61, 61, 61);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
     .mobile-menu {
         display: block;
     }
@@ -157,7 +166,7 @@ img {
     grid-template-columns: 25% 50% 25%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
     .main-trio {
         display: flex;
         flex-direction: column;
@@ -196,7 +205,7 @@ img {
     height: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
     .contact-us {
         display: flex;
         flex-direction: column;
@@ -219,10 +228,6 @@ img {
     .map {
         padding-top: 75%;
     }
-}
-
-.fill {
-    height: 100%;
 }
 
 .fill-form {
@@ -363,9 +368,13 @@ a {
     align-items: center;
 }
 
-/* .doc-item {
-
-} */
+@media (max-width: 1080px) {
+    .doc-item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 
 .pdfs {
     background-color: red;
@@ -395,12 +404,8 @@ a {
     color: black;
 }
 
-.refs {
-    color: blue;
-}
-
 .refs:hover {
-    color: red;
+    color: blue;
 }
 
 .refs:visited {
