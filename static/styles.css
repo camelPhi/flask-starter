@@ -1,17 +1,24 @@
-html, body {
+html {
     height: 100%;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    margin: 0;
-  }
+    font-size: 16px;
+    font-family: "Poppins Extra Light", Sans-Serif;
+}
+
+@media (max-width: 800px) {
+    html {
+        font-family: Arial, Sans-Serif;
+        font-size: 18px;
+    }
+}
 
 body {
-    font-family: "Poppins Extra Light", Sans-Serif;
-    font-size: 1.2vw;
-    color: #FFFFFF;
-    background-color: rgb(44, 43, 41);
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
+    background-color: rgb(44, 43, 41);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -21,54 +28,39 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 5.5vw;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 1.5vw;
-}
-
-@media (max-width: 800px) {
-    body {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.05em;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3, h4 {
-        font-size: 20px;
-    }
+    font-size: 1.5rem;
 }
 
 .header .logo img {
     border-radius: 10px;
 }
 
+@media (max-width: 800px) {
+    .header .logo img {
+        width: 30%;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
+    margin: 1.3rem;
     justify-content: space-between;
 }
 
 .navbar {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
+    list-style-type: none;
     justify-content: space-around;
 }
 
@@ -93,6 +85,7 @@ h4 {
 
 .mobile-menu {
     display: flex;
+    list-style-type: none;
     justify-content: flex-end;
     align-items: center;
 }
@@ -115,7 +108,24 @@ h4 {
 }
 
 .menu-items {
+    list-style-type: none;
+    justify-content: space-between
     display: none;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.menu-items li a:hover {
+    background-color: rgb(61, 61, 61);
 }
 
 @media (max-width: 800px) {
