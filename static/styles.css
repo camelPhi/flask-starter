@@ -1,13 +1,13 @@
 html {
     height: 100%;
-    font-size: 1.7vw;
+    font-size: 2vw;
     font-family: "Poppins Extra Light", Sans-Serif;
 }
 
 @media (max-width: 1080px) {
     html {
         font-family: Arial, Sans-Serif;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 }
 
