@@ -80,7 +80,7 @@ h4 {
 
 .nav-item {
     margin-left: 20px;
-    font-size: 1.4vw;
+    font-size: 2vw;
     text-decoration: none;
     padding: 15px;
     border-radius: 7.5px;
@@ -309,6 +309,7 @@ textarea::placeholder {
     padding-top: 1 rem
     position: fixed;
     width: 100%;
+    font-size: 0.5rem;
 }
 
 .calendar {
@@ -317,7 +318,7 @@ textarea::placeholder {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 .documents {
@@ -398,9 +399,9 @@ a {
 }
 
 .links {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
-    padding: 1% 17.5%;
+    padding: 1% 10%;
     background-color: white;
     color: black;
 }
@@ -419,6 +420,7 @@ a {
 
 .linksHeader {
     text-align: left;
+    font-size: 1.5rem;
 }
 
 .links-item {
