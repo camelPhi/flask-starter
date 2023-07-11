@@ -47,7 +47,7 @@ h4 {
         width: 100%;
         border-radius: 10px;
         display: flex;
-        justify-content: center;
+        align-items: left;
     }
 }
 
@@ -94,7 +94,7 @@ h4 {
 .mobile-menu {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: left;
 }
 
 .hamburger-icon {
