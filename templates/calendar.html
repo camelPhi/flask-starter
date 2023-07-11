@@ -4,19 +4,35 @@
     <title>Calendar | Glen Rock Troop 15</title>
     <link rel="icon" type="image/png" href="static/troopLogo.png"/>
     <link rel="stylesheet" href="static/styles.css">
+	<script src="static/hamburger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endblock %}
 
 {% block body %}
     <div class="container">
 		<div class="container-item header">
-			<logo><a href="/"><img src="static/troopLogo.png"></a></logo>
-				<div class="navbar">
-					<a class="nav-item" href="/">Home</a>
-					<a class="nav-item" href="/calendar">What's happening?</a>
-					<a class="nav-item" href="/documents">Documents</a>
-					<a class="nav-item" href="/links">Useful Links</a>
-					<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
+			<div class="logo"><a href="/"><img src="static/troopLogo.png"></a></div>
+    		<div class="navbar">
+				<a class="nav-item" href="/">Home</a>
+				<a class="nav-item" href="/calendar">What's happening?</a>
+				<a class="nav-item" href="/documents">Documents</a>
+				<a class="nav-item" href="/links">Useful Links</a>
+				<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
+    		</div>
+			<nav class="mobile-menu">
+				<div class="hamburger-icon">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
+				<ul class="menu-items">
+					<li><a href="/">Home</a></li>
+					<li><a href="/calendar">What's happening?</a></li>
+					<li><a href="/documents">Documents</a></li>
+					<li><a href="/links">Useful Links</a></li>
+					<li><a href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a></li>
+				</ul>
+			</nav>
 		</div>
 		<div class="calendar">
 			<iframe src="https://calendar.google.com/calendar/embed?src=hospitality.troop15%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

@@ -4,62 +4,80 @@
     <title>Links | Glen Rock Troop 15</title>
     <link rel="icon" type="image/png" href="static/troopLogo.png"/>
     <link rel="stylesheet" href="static/styles.css">
+	<script src="static/hamburger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endblock %}
 
 {% block body %}
     <div class="container">
 		<div class="container-item header">
-			<logo><a href="/"><img src="static/troopLogo.png"></a></logo>
-				<div class="navbar">
-					<a class="nav-item" href="/">Home</a>
-					<a class="nav-item" href="/calendar">What's happening?</a>
-					<a class="nav-item" href="/documents">Documents</a>
-					<a class="nav-item" href="/links">Useful Links</a>
-					<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
+			<div class="logo"><a href="/"><img src="static/troopLogo.png"></a></div>
+    		<div class="navbar">
+				<a class="nav-item" href="/">Home</a>
+				<a class="nav-item" href="/calendar">What's happening?</a>
+				<a class="nav-item" href="/documents">Documents</a>
+				<a class="nav-item" href="/links">Useful Links</a>
+				<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
+    		</div>
+			<nav class="mobile-menu">
+				<div class="hamburger-icon">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
+				<ul class="menu-items">
+					<li><a href="/">Home</a></li>
+					<li><a href="/calendar">What's happening?</a></li>
+					<li><a href="/documents">Documents</a></li>
+					<li><a href="/links">Useful Links</a></li>
+					<li><a href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a></li>
+				</ul>
+			</nav>
 		</div>
 		<div class="links">
+			<h2 class="linksHeader"> The following links: </h2>
+			<br>
 			<div class="links-item links-nj">
-				Northern NJ Council: <br>
+				<b>Northern NJ Council:</b> <br>
 				Council resources including scouting calendar & other resources. <br>
-				<a href="https://www.nnjbsa.org/">www.nnjbsa</a>
+				<a class="refs" href="https://www.nnjbsa.org/" target = "_blank" rel="noreferrer noopener">www.nnjbsa</a>
 			</div>
 			<hr>
 			<div class="links-item links-shop">
-				The Scout Shop: <br>
+				<b>The Scout Shop:</b> <br>
 				A great source for uniforms and other scouting paraphernalia. <br>
-				<a href="www.scoutshop.org">www.scoutshop.org</a>
+				<a class="refs" href="https://www.scoutshop.org/" target = "_blank" rel="noreferrer noopener">www.scoutshop.org</a>
 			</div>
 			<hr>
 			<div class="links-item links-bryan">
-				Bryan on Scouting: <br>
+				<b>Bryan on Scouting:</b> <br>
 				A tremendous source for all things scouting. <br>
-				<a href="blog.scoutingmagazine.org">blog.scoutingmagazine.org</a>
+				<a class="refs" href="https://blog.scoutingmagazine.org/" target = "_blank" rel="noreferrer noopener">blog.scoutingmagazine.org</a>
 			</div>
 			<hr>
 			<div class="links-item links-book">
-				Scoutbook: <br>
+				<b>Scoutbook:</b> <br>
 				Secure access to your scouts records. <br>
-				<a href="www.scoutbook.com">www.scoutbook.com</a>
+				<a class="refs" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">www.scoutbook.com</a>
 			</div>
 			<hr>
 			<div class="links-item links-snap">
-				Teamsnap: <br>
+				<b>Teamsnap:</b> <br>
 				Troop 15's mechanism for communicating. <br>
-				<a href="www.teamsnap.com">www.teamsnap.com</a>
+				<a class="refs" href="https://www.teamsnap.com/" target = "_blank" rel="noreferrer noopener">www.teamsnap.com</a>
 			</div>
 			<hr>
 			<div class="links-item links-badges">
-				Merit badges: <br>
+				<b>Merit badges:</b> <br>
 				A resource for scouting that outlines all requirements for scouts of every rank. <br>
-				<a href="www.scouting.org/meritbadges.aspx">www.scouting.org/meritbadges.aspx</a>
+				<a class="refs" href="https://www.scouting.org/meritbadges.aspx/" target = "_blank" rel="noreferrer noopener">www.scouting.org/meritbadges.aspx</a>
 			</div>
 			<hr>
 			<div class="links-item links-app">
-				myScouting App: <br>
+				<b>myScouting App:</b> <br>
 				A mobile app to log and track your scouting records. <br>
-				<a href="itunes.apple.com/us/app/myscouting/id1186037730?mt=8">itunes.apple.com/us/app/myscouting/id1186037730?mt=8 (iOS)</a> <br>
-				<a href="play.google.com/store/apps/details?id=com.myscouting">play.google.com/store/apps/details?id=com.myscouting (Android)</a>
+				<a class="refs" href="https://itunes.apple.com/us/app/myscouting/id1186037730?mt=8/" target = "_blank" rel="noreferrer noopener">itunes.apple.com/us/app/myscouting/id1186037730?mt=8 (iOS)</a> <br>
+				<a class="refs" href="https://play.google.com/store/apps/details?id=com.myscouting/" target = "_blank" rel="noreferrer noopener">play.google.com/store/apps/details?id=com.myscouting (Android)</a>
 			</div>
 		</div>
 		<div class="main-item copyright">
