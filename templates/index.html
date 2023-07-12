@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block head %}
-    <title>Another Home | Glen Rock Troop 15</title>
+<title xmlns="http://www.w3.org/1999/html">Another Home | Glen Rock Troop 15</title>
     <link rel="icon" type="image/png" href="static/troopLogo.png"/>
     <link rel="stylesheet" href="static/styles.css">
 	<script src="static/hamburger.js"></script>
@@ -12,13 +12,46 @@
     <div class="container">
 		<div class="container-item header">
 			<div class="logo"><a href="/"><img src="static/troopLogo.png"></a></div>
-    		<div class="navbar">
-				<a class="nav-item" href="/">Home</a>
-				<a class="nav-item" href="/calendar">What's happening?</a>
-				<a class="nav-item" href="/documents">Documents</a>
-				<a class="nav-item" href="/links">Useful Links</a>
-				<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
-    		</div>
+			<ul class="navbar">
+				<li><img class="bsa-logo" src="static/bsa-white.png"></li>
+				<li><a class="nav-item" href="/">Home</a></li>
+				<li><a class="nav-item" href="/">About Troop 15</a>
+  					<ul class="dropdown-content about">
+						<li><a href="/">Troop History</a></li>
+    					<li><a href="/">Eagle Honor Roll</a></li>
+    					<li><a href="/">Eagle Projects</a></li>
+						<li><a href="/">Adult Leaders</a></li>
+    					<li><a href="/">Troop Roster</a></li>
+  					</ul>
+				</li>
+				<li><a class="nav-item" href="/">Recruitment</a>
+  					<ul class="dropdown-content recruit">
+    					<li><a href="/">Prospective Families</a></li>
+    					<li><a href="/">Troop Committee</a></li>
+    					<li><a href="/">Volunteer with Troop 15!</a></li>
+  					</ul>
+				</li>
+				<li><a class="nav-item" href="/">Upcoming Events</a>
+  					<ul class="dropdown-content events">
+    					<li><a href="/calendar">Troop Calendar</a></li>
+						<li><a href="/">Fundraising</a></li>
+    					<li><a href="/">Summer Camps</a></li>
+						<li><a href="/">Event Registration</a></li>
+  					</ul>
+				</li>
+				<li><a class="nav-item troop-guide" href="/">NEW: Your Troop Guide!!!</a>
+  					<ul class="dropdown-content guide">
+    					<li><a href="/">Uniform</a></li>
+    					<li><a href="/">Equipment</a></li>
+    					<li><a href="/">Expectations</a></li>
+						<li><a href="/">Scout Sayings</a></li>
+						<li><a href="/">Rank Advancement</a></li>
+						<li><a href="/">Merit Badges</a></li>
+						<li><a href="/links">Useful Links</a></li>
+						<li><a href="/documents">Important Documents</a></li>
+  					</ul>
+				</li>
+    		</ul>
 			<nav class="mobile-menu">
 				<div class="hamburger-icon">
 					<span></span>
@@ -26,11 +59,43 @@
 					<span></span>
 				</div>
 				<ul class="menu-items">
-					<li><a href="/">Home</a></li>
-					<li><a href="/calendar">What's happening?</a></li>
-					<li><a href="/documents">Documents</a></li>
-					<li><a href="/links">Useful Links</a></li>
-					<li><a href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a></li>
+					<li><a class="nav-item" href="/">Home</a></li>
+					<li><a class="nav-item" href="/">About Troop 15</a>
+  						<ul class="dropdown-content about">
+							<li><a href="/">Troop History</a></li>
+    						<li><a href="/">Eagle Honor Roll</a></li>
+    						<li><a href="/">Eagle Projects</a></li>
+							<li><a href="/">Adult Leaders</a></li>
+    						<li><a href="/">Troop Youth Roster</a></li>
+  						</ul>
+					</li>
+					<li><a class="nav-item" href="/">Recruitment</a>
+  						<ul class="dropdown-content recruit">
+    						<li><a href="/">Prospective Families</a></li>
+    						<li><a href="/">Troop Committee</a></li>
+    						<li><a href="/">Volunteer with Troop 15!</a></li>
+  						</ul>
+					</li>
+					<li><a class="nav-item" href="/">Upcoming Events</a>
+  						<ul class="dropdown-content events">
+    						<li><a href="/calendar">Troop Calendar</a></li>
+							<li><a href="/">Fundraising</a></li>
+    						<li><a href="/">Summer Camps</a></li>
+							<li><a href="/">Event Registration</a></li>
+  						</ul>
+					</li>
+					<li><a class="nav-item" href="/">Your Troop Guide!</a>
+  						<ul class="dropdown-content guide">
+    						<li><a href="/">Uniform</a></li>
+    						<li><a href="/">Equipment</a></li>
+    						<li><a href="/">Expectations</a></li>
+							<li><a href="/">Scout Sayings</a></li>
+							<li><a href="/">Rank Advancement</a></li>
+							<li><a href="/">Merit Badges</a></li>
+							<li><a href="/links">Useful Links</a></li>
+							<li><a href="/documents">Important Documents</a></li>
+  						</ul>
+					</li>
 				</ul>
 			</nav>
         </div>
@@ -38,23 +103,15 @@
 	    	<img src="static/homeImage1.png">
 		</div>
 		<div class="container-item main">
-	    	<b><h1> Another Glen Rock Troop 15 </h1></b>
-            <h4><i> Placing Youth on the Path to Success </i></h4>
-	    	<div class="main-item main-trio">
-	        	<div class="main-trio-item main-left-image">
-		    		<img src="static/homeImage2.png">
-	        	</div>
-	        	<div class="main-trio-item main-about">
-		   			<b><h2> Get to Know Us </h2></b> <br>
+			<p>
+	    	<h1> Welcome to BSA Troop 15</h1>
+			<h1>Glen Rock, NJ</h1>
+            <center><i> Placing Youth on the Path to Success </i></center>
+			<p><p><p>
+	    	<p>
 		    		Troop 15 is a Scout-led Troop, meaning that the Scouts are responsible for developing the calendar, organizing meetings and training and developing other scouts. This important principle provides the ability for Scouts to learn and lead in a safe environment. This can not be accomplished without parent support and involvement. Unlike Cub Scouts, parents are asked to become much less involved with their own child and more within the structure of the troop as a committee member or assistant Scoutmaster. The success of the troop depends on a lot of adult volunteers who work behind the scenes to make it all happen.
-	        	</div>
-	        	<div class="main-trio-item main-right-image">
-		    		<img src="static/homeImage3.png">
-	        	</div>
-	    	</div>
-	    	<div class="main-item footer-image">
-				<img src="static/homeImage4.png">
-	    	</div>
+			</p>
+			<br><div class="fb-line"></div><br>
             <div class="main-item contact-forms">
 	        	<div class="contact-forms-item contact-us">
 					<div class="contact-us-item contact">
@@ -80,6 +137,19 @@
                     </form>
 					<div class="responseEmail" id="sent"><p> {{ message }} </p></div>
                 </div>
+				<div class="contact-forms-item facebook">
+					<h3>Visit Our Facebook Page!</h3>
+					<div class="fb-line"></div>
+					<img src="static/fb-logo.png"> <br>
+					<div class="fb-link"><a href="https://www.facebook.com/groups/529636537469815">https://www.facebook.com/groups/529636537469815</a></div>
+					<br>
+					<h3>Follow Us On:</h3>
+					<div class="fb-line"></div>
+					<div class="follows">
+						<img class="follows-item" src="static/twitter.png">
+						<img class="follows-item" src="static/instagram.png">
+					</div>
+				</div>
             </div>
 	    	<div class="main-item copyright">
 				&copy; 2023 by Glen Rock Troop 15
