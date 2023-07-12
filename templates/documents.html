@@ -4,19 +4,100 @@
     <title>Documents | Glen Rock Troop 15</title>
     <link rel="icon" type="image/png" href="static/troopLogo.png"/>
     <link rel="stylesheet" href="static/styles.css">
+	<script src="static/hamburger.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endblock %}
 
 {% block body %}
     <div class="container">
 		<div class="container-item header">
-			<logo><a href="/"><img src="static/troopLogo.png"></a></logo>
-				<div class="navbar">
-					<a class="nav-item" href="/">Home</a>
-					<a class="nav-item" href="/calendar">What's happening?</a>
-					<a class="nav-item" href="/documents">Documents</a>
-					<a class="nav-item" href="/links">Useful Links</a>
-					<a class="nav-item" href="https://scoutbook.scouting.org/" target = "_blank" rel="noreferrer noopener">Scoutbook</a>
+			<div class="logo"><a href="/"><img src="static/troopLogo.png"></a></div>
+			<ul class="navbar">
+				<li><img class="bsa-logo" src="static/bsa-white.png"></li>
+				<li><a class="nav-item" href="/">Home</a></li>
+				<li><a class="nav-item" href="/">About Troop 15</a>
+  					<ul class="dropdown-content about">
+						<li><a href="/">Troop History</a></li>
+    					<li><a href="/">Eagle Honor Roll</a></li>
+    					<li><a href="/">Eagle Projects</a></li>
+						<li><a href="/">Adult Leaders</a></li>
+    					<li><a href="/">Troop Roster</a></li>
+  					</ul>
+				</li>
+				<li><a class="nav-item" href="/">Recruitment</a>
+  					<ul class="dropdown-content recruit">
+    					<li><a href="/">Prospective Families</a></li>
+    					<li><a href="/">Troop Committee</a></li>
+    					<li><a href="/">Volunteer with Troop 15!</a></li>
+  					</ul>
+				</li>
+				<li><a class="nav-item" href="/">Upcoming Events</a>
+  					<ul class="dropdown-content events">
+    					<li><a href="/calendar">Troop Calendar</a></li>
+						<li><a href="/">Fundraising</a></li>
+    					<li><a href="/">Summer Camps</a></li>
+						<li><a href="/">Event Registration</a></li>
+  					</ul>
+				</li>
+				<li><a class="nav-item troop-guide" href="/">NEW: Your Troop Guide!!!</a>
+  					<ul class="dropdown-content guide">
+    					<li><a href="/">Uniform</a></li>
+    					<li><a href="/">Equipment</a></li>
+    					<li><a href="/">Expectations</a></li>
+						<li><a href="/">Scout Sayings</a></li>
+						<li><a href="/">Rank Advancement</a></li>
+						<li><a href="/">Merit Badges</a></li>
+						<li><a href="/links">Useful Links</a></li>
+						<li><a href="/documents">Important Documents</a></li>
+  					</ul>
+				</li>
+    		</ul>
+			<nav class="mobile-menu">
+				<div class="hamburger-icon">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
+				<ul class="menu-items">
+					<li><a class="nav-item" href="/">Home</a></li>
+					<li><a class="nav-item" href="/">About Troop 15</a>
+  						<ul class="dropdown-content about">
+							<li><a href="/">Troop History</a></li>
+    						<li><a href="/">Eagle Honor Roll</a></li>
+    						<li><a href="/">Eagle Projects</a></li>
+							<li><a href="/">Adult Leaders</a></li>
+    						<li><a href="/">Troop Youth Roster</a></li>
+  						</ul>
+					</li>
+					<li><a class="nav-item" href="/">Recruitment</a>
+  						<ul class="dropdown-content recruit">
+    						<li><a href="/">Prospective Families</a></li>
+    						<li><a href="/">Troop Committee</a></li>
+    						<li><a href="/">Volunteer with Troop 15!</a></li>
+  						</ul>
+					</li>
+					<li><a class="nav-item" href="/">Upcoming Events</a>
+  						<ul class="dropdown-content events">
+    						<li><a href="/calendar">Troop Calendar</a></li>
+							<li><a href="/">Fundraising</a></li>
+    						<li><a href="/">Summer Camps</a></li>
+							<li><a href="/">Event Registration</a></li>
+  						</ul>
+					</li>
+					<li><a class="nav-item" href="/">Your Troop Guide!</a>
+  						<ul class="dropdown-content guide">
+    						<li><a href="/">Uniform</a></li>
+    						<li><a href="/">Equipment</a></li>
+    						<li><a href="/">Expectations</a></li>
+							<li><a href="/">Scout Sayings</a></li>
+							<li><a href="/">Rank Advancement</a></li>
+							<li><a href="/">Merit Badges</a></li>
+							<li><a href="/links">Useful Links</a></li>
+							<li><a href="/documents">Important Documents</a></li>
+  						</ul>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		<div class="documents fill">
 			<div class="doc-item handbook">
